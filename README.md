@@ -1,3 +1,9 @@
+# Google Play Store Data Analysis Dashboard
+
+🚀 **Live Dashboard:** https://google-play-store-analysis-bn1f.onrender.com/
+
+A data analysis dashboard for exploring Google Play Store applications, ratings, installs, categories, reviews, and pricing.
+
 # Google Play Store Data Analysis - Interactive Streamlit Dashboard
 
 A modern, interactive, and professional college mini-project dashboard for **Google Play Store Data Analysis & Visualization**, built using **Python, Streamlit, Pandas, and Plotly**.
