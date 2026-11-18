@@ -697,7 +697,6 @@ if current_page == "🛠️ Data Preparation & Processing":
         st.caption("✅ Outliers are neatly capped at the upper fence, enabling clear visualization of the interquartile range.")
 
     st.markdown("---")
-    st.success("🎯 **College Viva / Practical Tip:** You can explain to your teacher that all transformations and calculations presented on this page are computed dynamically from your Jupyter Notebook (`DWP_mini_project.ipynb`) workflow.")
 
 
 # ==============================================================================
