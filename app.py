@@ -110,12 +110,14 @@ def load_and_clean_data():
     7. Create 'App_Type' column (Free if Price == 0, else Paid)
     8. Cast 'Reviews' to numeric and cap outliers using IQR method
     """
-    # Look for dataset in current directory, parent directory, or data folder
+    # Robust dataset resolution: looks in script directory first (ideal for Linux/Render)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     possible_paths = [
+        os.path.join(base_dir, "googleplaystore.csv"),
         "googleplaystore.csv",
-        os.path.join("..", "googleplaystore.csv"),
+        os.path.join(base_dir, "data", "googleplaystore.csv"),
         os.path.join("data", "googleplaystore.csv"),
-        os.path.join(os.path.expanduser("~"), "Downloads", "googleplaystore.csv"),
+        os.path.join("..", "googleplaystore.csv"),
     ]
     
     file_path = None
